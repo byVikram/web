@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>button</title>
+	<link rel="stylesheet" href="logostyle.css" />
+
+</head>
+<style>
+	.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 5px;
+  position: fixed;
+  bottom: 23px;
+  right: 100px;
+  width: 200px;
+} 
+.open-button:hover{
+	background-color: pink;
+	color: black;
+}
+body{
+	background: black;
+}
+</style>
+
+
+	<button class="open-button" href="index.html" target="popup" onclick="window.open('index.html','width=200,height=200')">CHATBOT</button>
+	
+
+</body>
+
+
+</html>

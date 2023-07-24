@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ChatBot | greatEvent</title>
+</head>
+<body>
+<nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div >
+    <marquee id="aks">
+      Hello Akshay
+    </marquee>
+    
+  </div>
+ 
+
+    <button style="font-size:30px;cursor:pointer;background:blackrgb(255, 255, 255);padding: 10px;border-radius: 30px;width: 200px;margin-left: 1250px;position: fixed;
+    margin-top: 550px;border-width: 3px;border-color: black;"  onclick="openimp()"> chatbot</button>
+
+
+<div id="imp" class="overlay">
+  <div class="overlay-content">
+    <div class="msgerex">
+    </div>
+    <div class="msgerex">
+    </div>
+    <section class="msger">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeimp()">&times;</a>
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <img src="robot.png" alt="" srcset="">  
+            <p>ChatBot</p>
+          </div>
+        </header>
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(bot.png)"
+            ></div>
+            <div class="msg-bubble">  
+              <div class="msg-info">
+                <div class="msg-info-name">BOT</div>
+                <div class="msg-info-time"></div>
+              </div>
+              <div class="msg-text">
+                Hi, welcome to ChatBot!! created by Vikram Go ahead and send me a message. 
+              </div>
+            </div>
+          </div>
+          <div class="msg right-msg">
+          
+           
+        </main>
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Enter your message...">
+          <button type="submit" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
+        </form>
+      </section>
+      </div>
+    </div>
+
+      <script src="main.js"></script>
+
+
+</body>
+</html>

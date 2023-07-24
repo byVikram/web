@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+:root {
+  --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --msger-bg: #fff;
+  --left-msg-bg: linear-gradient(to right, #f895b9, #f44183);
+  --right-msg-bg: #ececec;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Baloo 2", cursive;
+  background-image:url("back.jpg");
+  background-size: cover;
+}
+.msger {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 33%;
+  max-width: 386px;
+  margin-left:auto;
+  border-radius: 10px;
+  height: calc(100% - 50px);
+  background-color: blackrgb(255, 255, 255);;
+  background: var(--msger-bg);
+}
+.msger-header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+  background: #eee;
+  color: #666;
+}
+.msger-header-title{
+  display: flex;
+  align-items: center;
+}
+.msger-header-title img{
+  height: 2.5rem;
+  width: auto;
+}
+.msger-header-title p{
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.msger-chat {
+  flex: 1;
+  overflow-y: auto;
+  background-color: "black";
+  background:blackrgb(255, 255, 255) ;
+  border-color: black;
+  padding: 10px;
+  text-align: justify;
+}
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+.msger-chat::-webkit-scrollbar-track {
+
+}
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.msg:last-of-type {
+  margin: 0;
+}
+.msg-img {
+  width: 60px;
+  min-width: 50px;
+  height: 60px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+.msg-bubble {
+  max-width: 350px;
+  padding: 15px;
+  border-radius: 15px;
+  background: var(--left-msg-bg);
+}
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.msg-info-time {
+  font-size: 0.85em;
+}
+.left-msg .msg-bubble {
+  color: #fff;
+  border-bottom-left-radius: 0;
+}
+.right-msg {
+  flex-direction: row-reverse;
+}
+.right-msg .msg-bubble {
+  background: var(--right-msg-bg);
+  color: #000;
+  border-bottom-right-radius: 0;
+}
+.right-msg .msg-img {
+  margin: 0 0 0 10px;
+}
+.msger-inputarea {
+  display: flex;
+  padding: 10px;
+  background: #a3d3ea;
+  border-radius: 0px 0px 10px 10px;
+}
+.msger-inputarea * {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.msger-input {
+  flex: 1;
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.msger-send-btn {
+  margin-left: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.msger-chat {
+  background-color: #fcfcfe;
+}
+.bac{
+  margin-left: 0px;
+}
+
+.overlay-content {
+  height: calc(100% - 40px);
+  background-color: blackrgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;  
+}
+
+.overlay .closebtn {
+  font-size: 15px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-color: transparent;
+  overflow-x: hidden;
+
+}
+
+    nav{
+      background-color: black;
+      height: 40px;
+      padding: 5px;
+      border-radius: 10px;
+
+      margin-top: 5px;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 10px;
+      color: black;
+    }
+    ul{
+      list-style: none;
+    }
+
+    li{
+      display: inline-block;
+    }
+
+  #aks{
+    padding: 10px;
+    color: red;
+
+    font-size: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+  }
